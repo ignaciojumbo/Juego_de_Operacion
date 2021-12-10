@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    color: #262626;
+    background-image: linear-gradient(45deg, transparent 20%, black 25%, transparent 25%), 
+                      linear-gradient(-45deg, transparent 20%, black 25%, transparent 25%), 
+                      linear-gradient(-45deg, transparent 75%, black 80%, transparent 0),
+                      radial-gradient(gray 2px, transparent 0);
+    background-size: 30px 30px, 30px 30px;
+}
+.titulo{
+    width: 500px;
+    margin: auto;
+    background:rosybrown;
+    border-radius: 40px;
+}
+h1{
+    margin: 25px;
+    padding: 30px;
+    text-shadow: 2px 2px 7px red;
+}
+
+
+.niveles{
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    color: #fff;
+    background: #262626;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+.niveles ul{
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.niveles ul li span{
+    padding: 8px 12px;
+    border-radius: 15px;
+    transition: .3s;
+}
+.niveles ul li span:hover{
+    background-color: red;
+}
+
+
+.container-suma{
+    background-color: #ffc562;
+    max-width: 700px;
+    margin: auto;
+    border: 2px solid #000;
+    border-radius: 20px;
+    display: flex;
+    padding: 50px 0;
+}
+
+
+.izquierdo{
+    width: 70%;
+    font-size: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.derecha{
+    width: 30%;
+    color: #fff;
+
+}
+.msj{
+   font-size: 40px; 
+   height: 50px;
+}
+.opcion{
+    width: 80px;
+    height: 80px;
+    border:  1px solid #0004;
+    font-size: 50px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.opcion:hover{
+    background-color: #262626;
+}
+
+
+@media(max-width: 700px){
+    .titulo{
+        width: 300px;
+    }
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    .niveles{
+        width: 90%;
+        color: #fff;
+        background: #262626;
+        
+    }
+    .container-suma{
+        width: 90%;
+        margin: auto;
+        display: inline-block;
+    }
+    .izquierdo{
+        width: 100%;
+        font-size: 50px;
+    }
+    .msj{
+        font-size: 30px;
+        
+    }
+    .derecha{
+        width: 100%;
+        margin-top: 35px;
+    
+    }
+    .opcion{
+        display: inline-block;
+        width: 75px;
+        padding-top: 8px;
+        margin: auto;
+    }
+    .opcion:state{  
+        background: #000;
+    }
+   
+
+}

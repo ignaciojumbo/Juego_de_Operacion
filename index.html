@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de sumar</title>
+    <!--Link de los estilos-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="titulo">
+            <h1>Juegos matematicos</h1>
+        </div>
+
+        <div class="niveles">
+            <ul>
+                <li><span class="facil" onclick="nivel(this)">FACIL</span></li>
+                <li><span class="medio" onclick="nivel(this)">MEDIO</span></li>
+                <li><span class="dificil" onclick="nivel(this)">DIFICIL</span></li>
+                <li><span class="pro" onclick="nivel(this)">PRO</span></li>
+            </ul>
+        </div>
+
+        <div class="container-suma">
+            
+            <div class="izquierdo">
+                <div class="container-operacion">
+                    <span id="suma">9 + 9 =</span>
+                    <span class="resultado" id="resultado"> 18</span>
+                   
+                </div>
+
+                <span id="msj" class="msj">ESOCOJA LA OPCIÓN</span>
+            </div>
+            <div class="derecha">
+                <span id="op1" class="opcion" onclick="controlarRespuesta(this)">18</span>
+                <span id="op2" class="opcion" onclick="controlarRespuesta(this)">18</span>
+                <span id="op3" class="opcion" onclick="controlarRespuesta(this)">18</span>
+            </div>
+        </div>
+    </div>
+
+    <!--Link de jacaScript-->
+    <script src="app.js"></script>
+</body>
+
+</html>
